@@ -1,1 +1,26 @@
-
+*{
+    margin: 0;   
+}
+#header{
+    width: 100%;
+    height: 60px;
+    background-color: DarkSlateGray;
+}
+#aheader{
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding: auto;
+}
+#adiv{
+    width: 100px;
+    height: 100%;
+}
+#footer{
+    width: 100%;
+    height: 140px;
+    background-color: #1d3030;
+    position: absolute;
+}
