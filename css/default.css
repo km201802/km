@@ -17,7 +17,7 @@
 #adiv{
     width: 100px;
     height: 100%;
-    display:inline-box;
+    display:box;
 }
 #footer{
     width: 100%;
