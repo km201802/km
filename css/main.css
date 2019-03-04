@@ -1,0 +1,17 @@
+main{
+    padding-top: 8rem;
+}
+.container{
+    line-height: 2em;
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.container h1{
+    text-align: center;
+    line-height: 2em;
+}
+.container p{
+    margin-bottom: 2em;
+    text-align: center;
+}
