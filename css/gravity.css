@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+}
+html{
+	overflow:0px 1000px;
+}
+header{
+	z-index: 1;
+}
+.main{
+	padding-top: 7rem;
+}
+#footer{
+	margin:0;
+	padding: 0;
+}
+#canvas{
+	position: relative;
+	left:0px;
+	top: 8px;
+	transform: rotate();
+}
+#button, input, p{
+	display: block;
+	width: 70px;
+	margin: 2px;
+	font-size: 15px;
+	z-index: 1;
+}
+.sction1{
+	position: fixed;
+	z-index: 1;
+}

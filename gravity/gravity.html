@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mini Game</title>
+	<!-- GITHUB -->
+	<link rel="stylesheet" href="/km/css/default.css">
+	<link rel="stylesheet" href="/km/css/gravity.css">
+	<!-- DESKTOP -->
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/gravity.css">
+	</head>
+<body>
+	<header id="header">
+		<div class="container nav-logo">
+			<a href="" id="logo">KM</a>
+			<nav id="nav">
+				<ul id="ul">
+					<li><a href="/km">HOME</a></li>
+					<li><a href="/libs">LIBRERIAS</a></li>
+					<li><a href="/km/gravity">Mini Game</a></li>
+					<li><a href="/km/info">INFO</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="sction1">
+				<p>Gravity</p>
+				<input type="text" value="0.2" id="gravity">
+				<p>Friction</p>
+				<input type="text" value="0.90" id="friction">
+				<p>Cantidad</p>
+				<input type="text" value="150" id="cantidad"/>
+				<button id="button" onclick="conf()">Aceptar</button>
+			</div>
+
+			<canvas id="canvas" width="1280" height="600"></canvas>
+
+		</div>
+	</main>
+	
+	<footer id="footer">
+		
+	</footer>
+
+	<!-- GITHUB -->
+	<script src="/km/js/gravity.js" type="text/javascript"></script>
+	<!-- DESKTOP -->
+	<script src="../js/gravity.js" type="text/javascript"></script>
+</body>
+</html>
