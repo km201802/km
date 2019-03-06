@@ -15,9 +15,14 @@ body{
     top:0;
     right: 0;
 }
-.nav-logo{
+/* .nav-logo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+} */
+.nav-logo{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 #header a{
