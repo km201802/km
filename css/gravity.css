@@ -17,10 +17,10 @@ header{
 #canvas{
 	position: relative;
 	left:0px;
-	top: 8px;
+	top: 5px;
 	transform: rotate();
 }
-#button, input, p{
+#button, input, main p{
 	display: block;
 	width: 70px;
 	margin: 2px;
@@ -38,6 +38,7 @@ header{
     left:0;
     top:0;
     right: 0;
+    z-index: 1;
 }
 #header ul, #header a{
 	text-decoration: none;
@@ -55,4 +56,16 @@ header{
 }
 #nav ul li{
     display: inline-flex;
+}
+#footer{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(29,48,48);
+    padding: 4rem 0;
+    text-align: center;
+    position: absolute;
+    display: ;
+}
+#footer p{
+	text-align: center;
 }
