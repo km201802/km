@@ -5,7 +5,7 @@ html{
 	overflow:0px 1000px;
 }
 header{
-	z-index: 1;
+	
 }
 .main{
 	padding-top: 7rem;
@@ -30,4 +30,29 @@ header{
 .sction1{
 	position: fixed;
 	z-index: 1;
+}
+#header{
+	background: darkslategray;
+	padding: 1.5rem 0;
+    position: fixed;
+    left:0;
+    top:0;
+    right: 0;
+}
+#header ul, #header a{
+	text-decoration: none;
+	color: darkcyan;
+	list-style: none;
+}
+#nav ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: background 0.4s linear;
+    border-radius: 5px;
+}
+#nav ul li a:hover{
+    background:rgb(57,96,96);
+}
+#nav ul li{
+    display: inline-flex;
 }
