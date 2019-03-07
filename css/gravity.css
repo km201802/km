@@ -7,8 +7,13 @@ html{
 header{
 	
 }
+body{
+	color: gray;
+	font-size: 1.2em;
+}
 .main{
 	padding-top: 7rem;
+	background-color: #0F1724;
 }
 #footer{
 	margin:0;
