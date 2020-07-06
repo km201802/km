@@ -26,7 +26,7 @@ class Fps{
     static logFps(){
         console.log(this.getFps());
     }
-    static drawFps(x=w-100, y=30){
+    static drawFps(x=300, y=50){
         ctx.font = "25px sans-serif";
         ctx.fillStyle = "black";
         ctx.fillText("FPS: "+this.getFps(), x, y);
