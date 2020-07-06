@@ -7,7 +7,33 @@ var cv = document.getElementById("canvas");
 	var gravity = 0.2;
 	var friction = 0.90;
 	var cantidad = 150
-
+class Fps{
+    static fps = 0;
+    static _sec = new Date().getSeconds();
+    static lsec = 0;
+    static frames = 0;
+    
+    static getFps(){
+        this.sec = new Date().getSeconds()
+        if(this.sec != this.lsec){
+            this.fps = this.frames;
+            this.frames = 0;
+        }
+        this.lsec = this.sec;
+        this.frames++;
+        return this.fps;
+    }
+    static logFps(){
+        console.log(this.getFps());
+    }
+    static drawFps(x=w-100, y=30){
+        ctx.font = "25px sans-serif";
+        ctx.fillStyle = "black";
+        ctx.fillText("FPS: "+this.getFps(), x, y);
+    }
+}
+	
+	
 	function conf(){
 		gravity = parseFloat(document.getElementById('gravity').value);
 		friction =  parseFloat(document.getElementById('friction').value);
@@ -93,6 +119,7 @@ var cv = document.getElementById("canvas");
 		requestAnimationFrame(animate);
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		//CBola.physics();
+		Fps.drawFps();
 		for (let i = 0; i < array.length; i++) {
 			array[i].physics();
 		}
